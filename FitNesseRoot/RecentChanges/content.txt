@@ -1,3 +1,4 @@
+|SDPSuite.OrderTableTest||16:19:13 Fri, Jul 21, 2017|
 |SDPSuite.OfficesTableTest||16:04:43 Fri, Jul 21, 2017|
 |SDPSuite.EmployeesTableTest||14:46:16 Fri, Jul 21, 2017|
 |SDPSuite.CustomersTableTest||14:43:23 Fri, Jul 21, 2017|

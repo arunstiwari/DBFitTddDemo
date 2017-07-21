@@ -1,0 +1,13 @@
+!3 {{{1. Inspect Orders Table}}}
+|Inspect table|Orders|
+
+!3 {{{2. Validating Columns of Orders Table}}}
+|query|describe orders|
+|field?|type?|key?|
+|orderNumber|int(11)|PRI|
+|orderDate|date||
+|requiredDate|date||
+|shippedDate|date||
+|status|varchar(15)||
+|comments|text||
+|customerNumber|int(11)||
