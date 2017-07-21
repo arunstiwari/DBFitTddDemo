@@ -14,3 +14,16 @@
 |country|varchar(50)||
 |postalCode|varchar(15)||
 |territory|varchar(10)||
+
+!3 {{{3. Validating Column Nullability}}}
+|query|describe offices|
+|field?|null?|default?|
+|officeCode|NO|NULL|
+|city|NO|NULL|
+|phone|NO|NULL|
+|addressLine1|NO|NULL|
+|addressLine2|YES|NULL|
+|state|YES|NULL|
+|country|NO|NULL|
+|postalCode|NO|NULL|
+|territory|NO|NULL|
