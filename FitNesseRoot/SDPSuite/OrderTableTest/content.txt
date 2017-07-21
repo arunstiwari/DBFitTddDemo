@@ -11,3 +11,14 @@
 |status|varchar(15)||
 |comments|text||
 |customerNumber|int(11)||
+
+!3 {{{3. Validating Columns Nullability}}}
+|query|describe orders|
+|field?|null?|default?|
+|orderNumber|NO|NULL|
+|orderDate|NO|NULL|
+|requiredDate|NO|NULL|
+|shippedDate|YES|NULL|
+|status|NO|NULL|
+|comments|YES|NULL|
+|customerNumber|NO|NULL|
