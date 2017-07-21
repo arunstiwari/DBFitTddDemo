@@ -1,3 +1,15 @@
 !3 {{{1. Inspecting Employees Table}}}
 
 |inspect table|EMPLOYEES|
+
+!3 {{{2. Validating Column Structure}}}
+| query | describe employees |
+| field? | type? | key? |
+| employeeNumber | int(11) | PRI |
+| lastName | varchar(50) | |
+| firstName | varchar(50) | |
+| extension | varchar(10) | |
+| email | varchar(100) | |
+| officeCode | varchar(10) | |
+| reportsTo | int(11) | |
+| jobTitle | varchar(50) | |
