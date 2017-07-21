@@ -1,3 +1,16 @@
 !3 {{{1. Inspect Offices table}}}
 
 |inspect table|offices|
+
+!3 {{{2. Validating Column Structure}}}
+|query|describe offices|
+|field?|type?|key?|
+|officeCode|varchar(10)|PRI|
+|city|varchar(50)||
+|phone|varchar(50)||
+|addressLine1|varchar(50)||
+|addressLine2|varchar(50)||
+|state|varchar(50)||
+|country|varchar(50)||
+|postalCode|varchar(15)||
+|territory|varchar(10)||
