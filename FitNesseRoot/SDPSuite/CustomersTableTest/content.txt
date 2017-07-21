@@ -19,3 +19,20 @@
 | country | varchar(50) | |
 | salesRepEmployeeNumber | int(11) | MUL |
 | creditLimit | decimal(10,2) | |
+
+!3 {{{3. Validating Column Nullability}}}
+| query | describe customers |
+| field? | null? | default? |
+| customerNumber | NO | NULL |
+| customerName | NO | NULL |
+| contactLastName | NO | NULL |
+| contactFirstName | NO | NULL |
+| phone | NO | NULL |
+| addressLine1 | NO | NULL |
+| addressLine2 | YES | NULL |
+| city | NO | NULL |
+| state | YES | NULL |
+| postalCode | YES | NULL |
+| country | NO | NULL |
+| salesRepEmployeeNumber | YES | NULL |
+| creditLimit | YES | NULL |
