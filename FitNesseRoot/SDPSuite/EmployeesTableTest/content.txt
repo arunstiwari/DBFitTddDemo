@@ -1,0 +1,51 @@
+!3 {{{1. Inspecting Employees Table}}}
+
+|inspect table|EMPLOYEES|
+
+!3 {{{2. Validating Column Structure}}}
+| query | describe employees |
+| field? | type? | key? |
+| employeeNumber | int(11) | PRI |
+| lastName | varchar(50) | |
+| firstName | varchar(50) | |
+| extension | varchar(10) | |
+| email | varchar(100) | |
+| officeCode | varchar(10) | |
+| reportsTo | int(11) | |
+| jobTitle | varchar(50) | |
+
+!3 {{{ 3.Validating Column Nullability}}}
+| query | describe employees |
+| field? | null? | default? |
+| employeeNumber | NO | NULL |
+| lastName | NO |NULL |
+| firstName | NO | NULL|
+| extension | NO |NULL |
+| email | NO |NULL |
+| officeCode | NO | NULL|
+| reportsTo | YES|NULL |
+| jobTitle | NO |NULL |
+
+!3 {{{ 4.Inserting Records and Validating}}}
+|insert|employees|
+|employeeNumber|lastName|firstName|extension|email|officeCode|reportsTo|jobTitle|
+|1002|Murphy|Diane|x5800|dmurphy@classicmodelcars.com|1|NULL|President|
+|1056|Patterson|Mary|x4611|mpatterso@classicmodelcars.com|1|1002|VP Sales|
+
+!3 {{{5.Validate the Insertion Record For Employee Number 1002}}}
+|set parameter|employeeNumber|1002|
+
+|store query|select * from employees where employeeNumber= @employeeNumber|q1|
+
+|Query|<<q1|
+|employeeNumber|lastName|firstName|extension|email|officeCode|reportsTo|jobTitle|
+|1002|Murphy|Diane|x5800|dmurphy@classicmodelcars.com|1|NULL|President|
+
+!3 {{{6.Validate the Insertion Record For Employees Number 1056}}}
+|set parameter|employeeNumber2|1056|
+
+|store query|select * from employees where employeeNumber= @employeeNumber2|q2|
+
+|Query|<<q2|
+|employeeNumber|lastName|firstName|extension|email|officeCode|reportsTo|jobTitle|
+|1056|Patterson|Mary|x4611|mpatterso@classicmodelcars.com|1|1002|VP Sales|
