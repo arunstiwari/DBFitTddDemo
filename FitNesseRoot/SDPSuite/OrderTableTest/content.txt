@@ -28,3 +28,18 @@
 |index_name?|column_name?|
 |PRIMARY|orderNumber|
 |customerNumber|customerNumber|
+
+!3 {{{ 5.Inserting Records and Validating}}}
+|insert|orders|
+|orderNumber|orderDate|requiredDate|shippedDate|status|comments|customerNumber|
+|10100|2003-01-06|2003-01-13|2003-01-10|Shipped|NULL|363|
+|10101|2003-01-09|2003-01-18|2003-01-11|Shipped|Check on availability|128|
+
+!3 {{{6.Validate the Insertion Record For Order Number 10100}}}
+|set parameter|orderNumber|10100|
+
+|store query|select * from orders where orderNumber= @orderNumber|q1|
+
+|Query|<<q1|
+|orderNumber|orderDate|requiredDate|shippedDate|status|comments|customerNumber|
+|10100|2003-01-06|2003-01-13|2003-01-10|Shipped|NULL|363|
