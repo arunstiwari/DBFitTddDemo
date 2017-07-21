@@ -3,3 +3,10 @@
 !|dbfit.MySqlTest|
 
 |Connect using file|MySQLConnection.properties|
+
+
+!3 {{{ 4.Inserting Records and Validating}}}
+|insert|employees|
+|employeeNumber|lastName|firstName|extension|email|officeCode|reportsTo|jobTitle|
+|1003|Murphy|Diane|x5800|dmurphy@classicmodelcars.com|1|NULL|President|
+|1057|Patterson|Mary|x4611|mpatterso@classicmodelcars.com|1|1003|VP Sales|
