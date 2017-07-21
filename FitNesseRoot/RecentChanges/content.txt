@@ -1,3 +1,4 @@
+|SDPSuite.GetOfficeByCountryProcedure||16:37:30 Fri, Jul 21, 2017|
 |SDPSuite.SetUp||16:32:39 Fri, Jul 21, 2017|
 |SDPSuite.OrderTableTest||16:30:56 Fri, Jul 21, 2017|
 |SDPSuite.OfficesTableTest||16:04:43 Fri, Jul 21, 2017|
