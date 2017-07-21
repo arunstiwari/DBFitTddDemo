@@ -41,3 +41,8 @@
 |Query|<<q1|
 |officeCode|city|phone|addressLine1|addressLine2|state|country|postalCode|territory|
 |8|NEW DELHI|+91 20 7877 2041|C5 B JANAKPURI|Level 7|NULL|IN|100001|INDIA|
+
+!3 {{{6. Validating the Index on Offices table}}}
+|query|SELECT * FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'ci' AND TABLE_NAME='offices'|
+|index_name?|column_name?|
+|PRIMARY|officeCode|
