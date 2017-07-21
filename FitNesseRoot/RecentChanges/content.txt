@@ -1,4 +1,4 @@
+|SDPSuite.CustomersTableTest||14:43:23 Fri, Jul 21, 2017|
 |SDPSuite.SetUp||14:36:05 Fri, Jul 21, 2017|
-|SDPSuite.CustomersTableTest||14:33:06 Fri, Jul 21, 2017|
 |SDPSuite.EmployeesTableTest||13:45:53 Fri, Jul 21, 2017|
 |SDPSuite||13:20:18 Fri, Jul 21, 2017|
