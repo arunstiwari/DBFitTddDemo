@@ -13,3 +13,15 @@
 | officeCode | varchar(10) | |
 | reportsTo | int(11) | |
 | jobTitle | varchar(50) | |
+
+!3 {{{ 3.Validating Column Nullability}}}
+| query | describe employees |
+| field? | null? | default? |
+| employeeNumber | NO | NULL |
+| lastName | NO |NULL |
+| firstName | NO | NULL|
+| extension | NO |NULL |
+| email | NO |NULL |
+| officeCode | NO | NULL|
+| reportsTo | YES|NULL |
+| jobTitle | NO |NULL |
