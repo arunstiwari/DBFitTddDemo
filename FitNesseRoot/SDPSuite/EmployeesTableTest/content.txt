@@ -49,3 +49,10 @@
 |Query|<<q2|
 |employeeNumber|lastName|firstName|extension|email|officeCode|reportsTo|jobTitle|
 |1056|Patterson|Mary|x4611|mpatterso@classicmodelcars.com|1|1002|VP Sales|
+
+!3 {{{7. Validating the Index on Employees table}}}
+|query|SELECT * FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'ci' AND TABLE_NAME='EMPLOYEES'|
+|index_name?|column_name?|
+|PRIMARY|employeeNumber|
+|reportsTo|reportsTo|
+|officeCode|officeCode|
