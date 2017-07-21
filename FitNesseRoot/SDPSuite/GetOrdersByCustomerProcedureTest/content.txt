@@ -1,2 +1,10 @@
 !3 {{{1. Inspect Procedure}}}
 |inspect procedure|get_order_by_cust|
+
+!3 {{{2. Procedure Test}}}
+
+|execute procedure|get_order_by_cust|
+| cust_no|shipped?| canceled?|resolved?|disputed?|
+| 363 | 1 | 1| 0| 0 |
+| 128 | 0 | 0| 1| 1 |
+

@@ -1,6 +1,6 @@
-|SDPSuite.GetOrdersByCustomerProcedureTest||16:56:47 Fri, Jul 21, 2017|
+|SDPSuite.GetOrdersByCustomerProcedureTest||17:04:38 Fri, Jul 21, 2017|
+|SDPSuite.SetUp||17:03:29 Fri, Jul 21, 2017|
 |SDPSuite.GetOfficeByCountryProcedure||16:48:17 Fri, Jul 21, 2017|
-|SDPSuite.SetUp||16:32:39 Fri, Jul 21, 2017|
 |SDPSuite.OrderTableTest||16:30:56 Fri, Jul 21, 2017|
 |SDPSuite.OfficesTableTest||16:04:43 Fri, Jul 21, 2017|
 |SDPSuite.EmployeesTableTest||14:46:16 Fri, Jul 21, 2017|
