@@ -1,0 +1,45 @@
+!3 {{{1. Inspect Orders Table}}}
+|Inspect table|Orders|
+
+!3 {{{2. Validating Columns of Orders Table}}}
+|query|describe orders|
+|field?|type?|key?|
+|orderNumber|int(11)|PRI|
+|orderDate|date||
+|requiredDate|date||
+|shippedDate|date||
+|status|varchar(15)||
+|comments|text||
+|customerNumber|int(11)||
+
+!3 {{{3. Validating Columns Nullability}}}
+|query|describe orders|
+|field?|null?|default?|
+|orderNumber|NO|NULL|
+|orderDate|NO|NULL|
+|requiredDate|NO|NULL|
+|shippedDate|YES|NULL|
+|status|NO|NULL|
+|comments|YES|NULL|
+|customerNumber|NO|NULL|
+
+!3 {{{4. Validating the Index on Orders table}}}
+|query|SELECT * FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'ci' AND TABLE_NAME='ORDERS'|
+|index_name?|column_name?|
+|PRIMARY|orderNumber|
+|customerNumber|customerNumber|
+
+!3 {{{ 5.Inserting Records and Validating}}}
+|insert|orders|
+|orderNumber|orderDate|requiredDate|shippedDate|status|comments|customerNumber|
+|10100|2003-01-06|2003-01-13|2003-01-10|Shipped|NULL|363|
+|10101|2003-01-09|2003-01-18|2003-01-11|Shipped|Check on availability|128|
+
+!3 {{{6.Validate the Insertion Record For Order Number 10100}}}
+|set parameter|orderNumber|10100|
+
+|store query|select * from orders where orderNumber= @orderNumber|q1|
+
+|Query|<<q1|
+|orderNumber|orderDate|requiredDate|shippedDate|status|comments|customerNumber|
+|10100|2003-01-06|2003-01-13|2003-01-10|Shipped|NULL|363|

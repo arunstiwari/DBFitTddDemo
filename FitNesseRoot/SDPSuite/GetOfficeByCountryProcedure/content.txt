@@ -1,0 +1,11 @@
+!3 {{{1. Inspect Procedure}}}
+
+|inspect procedure|GetOfficeByCountry|
+
+!3 {{{2. Procedure Execution Test}}}
+|set parameter|countryname|USA|
+
+|execute procedure|GetOfficeByCountry||
+|countryname|?|
+|USA|?|
+

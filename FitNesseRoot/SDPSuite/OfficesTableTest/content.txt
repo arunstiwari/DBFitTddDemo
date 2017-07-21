@@ -1,0 +1,48 @@
+!3 {{{1. Inspect Offices table}}}
+
+|inspect table|offices|
+
+!3 {{{2. Validating Column Structure}}}
+|query|describe offices|
+|field?|type?|key?|
+|officeCode|varchar(10)|PRI|
+|city|varchar(50)||
+|phone|varchar(50)||
+|addressLine1|varchar(50)||
+|addressLine2|varchar(50)||
+|state|varchar(50)||
+|country|varchar(50)||
+|postalCode|varchar(15)||
+|territory|varchar(10)||
+
+!3 {{{3. Validating Column Nullability}}}
+|query|describe offices|
+|field?|null?|default?|
+|officeCode|NO|NULL|
+|city|NO|NULL|
+|phone|NO|NULL|
+|addressLine1|NO|NULL|
+|addressLine2|YES|NULL|
+|state|YES|NULL|
+|country|NO|NULL|
+|postalCode|NO|NULL|
+|territory|NO|NULL|
+
+!3 {{{ 4.Inserting Records and Validating}}}
+|insert|offices|
+|officeCode|city|phone|addressLine1|addressLine2|state|country|postalCode|territory|
+|8|NEW DELHI|+91 20 7877 2041|C5 B JANAKPURI|Level 7|NULL|IN|100001|INDIA|
+
+!3 {{{5.Validate the Insertion Record For Office Code 8}}}
+|set parameter|officeCode|8|
+
+|store query|select * from offices where officeCode= @officeCode|q1|
+
+|Query|<<q1|
+|officeCode|city|phone|addressLine1|addressLine2|state|country|postalCode|territory|
+|8|NEW DELHI|+91 20 7877 2041|C5 B JANAKPURI|Level 7|NULL|IN|100001|INDIA|
+
+!3 {{{6. Validating the Index on Offices table}}}
+|query|SELECT * FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'ci' AND TABLE_NAME='offices'|
+|index_name?|column_name?|
+|PRIMARY|officeCode|
