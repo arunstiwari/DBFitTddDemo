@@ -27,3 +27,17 @@
 |country|NO|NULL|
 |postalCode|NO|NULL|
 |territory|NO|NULL|
+
+!3 {{{ 4.Inserting Records and Validating}}}
+|insert|offices|
+|officeCode|city|phone|addressLine1|addressLine2|state|country|postalCode|territory|
+|8|NEW DELHI|+91 20 7877 2041|C5 B JANAKPURI|Level 7|NULL|IN|100001|INDIA|
+
+!3 {{{5.Validate the Insertion Record For Office Code 8}}}
+|set parameter|officeCode|8|
+
+|store query|select * from offices where officeCode= @officeCode|q1|
+
+|Query|<<q1|
+|officeCode|city|phone|addressLine1|addressLine2|state|country|postalCode|territory|
+|8|NEW DELHI|+91 20 7877 2041|C5 B JANAKPURI|Level 7|NULL|IN|100001|INDIA|
