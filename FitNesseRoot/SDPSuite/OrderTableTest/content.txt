@@ -22,3 +22,9 @@
 |status|NO|NULL|
 |comments|YES|NULL|
 |customerNumber|NO|NULL|
+
+!3 {{{4. Validating the Index on Orders table}}}
+|query|SELECT * FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'ci' AND TABLE_NAME='ORDERS'|
+|index_name?|column_name?|
+|PRIMARY|orderNumber|
+|customerNumber|customerNumber|
