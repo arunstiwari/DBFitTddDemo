@@ -1,14 +1,25 @@
-!1 Welcome to [[FitNesse][FitNesse.FitNesse]]!
-!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
-# Here is a good place to add your first page (WikiWord). For example, MyTopLevelApplicationPage
+!c !3 !-DbFit-! makes test driven database development easy
+!img-l http://files/images/trainers.jpg 
+!-<div >-!
+This Wiki contains the [[reference documentation][.DbFit.DbFitReference]] and [[acceptance tests][.DbFit.AcceptanceTests]] for the [[!-DbFit-!][http://dbfit.github.io/dbfit/]] project. 
 
-To add your first "page", click the [[Edit][.FrontPage?edit]] button and add a [[!-WikiWord-!][.FitNesse.UserGuide.FitNesseWiki.WikiWord]] to the page.
+!3 Start by browsing the following pages:
+!-<ul>-!
+!-<li>-!For a quick Tutorial, see the [[Hello World example][.DbFit.DbFitReference.DatabaseUnitTests.HelloWorld]].!-</li>-!
+!-<li>-!For more detailed information on using !-DbFit-!, see the [[Reference Documentation][.DbFit.DbFitReference]]!-</li>-!
+!-<li>-!For more .NET examples see [[.NET Acceptance tests][.DbFit.AcceptanceTests.DotNetTests]].!-</li>-!
+!-<li>-!For more Java examples see [[Java Acceptance tests][.DbFit.AcceptanceTests.JavaTests]].!-</li>-!
+!-</ul>-!
 
-| '''To Learn More...''' |
-| [[A One-Minute Description][.FitNesse.UserGuide.OneMinuteDescription]] | ''What is FitNesse Start here.'' |
-| [[A Two-Minute Example][.FitNesse.UserGuide.TwoMinuteExample]] | ''A brief example. Read this one next.'' |
-| [[User Guide][.FitNesse.UserGuide]] | ''Answer the rest of your questions here.'' |
-| [[Acceptance Tests][.FitNesse.SuiteAcceptanceTests]] | ''FitNesse's suite of Acceptance Tests'' |
-| [[Release Notes][.FitNesse.ReleaseNotes]] | ''Find out about FitNesse's new features'' |
+For a detailed introduction on how to use FitNesse, see [[!-Test Driven .NET Development With FitNesse-!][http://gojko.net/fitnesse/book]]. See http://dbfit.github.io/dbfit/ for more information on !-DbFit-!. You can leave your comments and feedback [[here][http://dbfit.github.io/dbfit/]].
+!-</div>-!
+----
+!3 DbFit is based on the [[FitNesse][FitNesse.FitNesse]] framework.
 
-!note Release ${FITNESSE_VERSION}
+| '''To Learn More about FitNesse...'''|
+| [[A One-Minute Description][FitNesse.UserGuide.OneMinuteDescription]]|''What is [[FitNesse][FitNesse.FitNesse]]? Start here.''|
+| [[A Two-Minute Example][FitNesse.UserGuide.TwoMinuteExample]]|''A brief example. Read this one next.''|
+| [[User Guide][FitNesse.UserGuide]]|''Answer the rest of your questions here.''|
+| [[Acceptance Tests][FitNesse.SuiteAcceptanceTests]]|''FitNesse's suite of Acceptance Tests''|
+| [[Release Notes][FitNesse.ReleaseNotes]]|''Find out about FitNesse's new features''|
+
